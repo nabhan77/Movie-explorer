@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #080b14;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  background: rgba(8, 11, 20, 0.95) !important;
+  padding: 18px 0;
+  border-bottom: 1px solid #242938;
+}
+
+.navbar-brand {
+  color: white !important;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+/* Home */
+.home-container {
+  min-height: 90vh;
+  padding-top: 70px;
+}
+
+.hero-title {
+  font-size: clamp(35px, 5vw, 65px);
+  font-weight: 800;
+  background: linear-gradient(90deg, #ffffff, #a78bfa);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-subtitle {
+  color: #9ca3af;
+  font-size: 17px;
+}
+
+/* Search */
+.search-box {
+  max-width: 600px;
+  margin: 35px auto;
+  display: flex;
+  gap: 10px;
+}
+
+.search-box input {
+  background: #171c2b;
+  border: 1px solid #343b50;
+  color: white;
+  padding: 14px;
+  border-radius: 10px;
+}
+
+.search-box input:focus {
+  background: #171c2b;
+  color: white;
+  border-color: #8b5cf6;
+  box-shadow: 0 0 10px #8b5cf655;
+}
+
+.search-box input::placeholder {
+  color: #9ca3af;
+}
+
+.search-btn {
+  background: #8b5cf6;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 10px;
+  color: white;
+  font-weight: 600;
+}
+
+.search-btn:hover {
+  background: #7c3aed;
+}
+
+/* Movie Cards */
+.movie-card {
+  background: #151a29;
+  border: 1px solid #272e40;
+  border-radius: 14px;
+  overflow: hidden;
+  transition: 0.3s;
+  height: 100%;
+}
+
+.movie-card:hover {
+  transform: translateY(-8px);
+  border-color: #8b5cf6;
+  box-shadow: 0 10px 30px #00000080;
+}
+
+.movie-card img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.movie-card-body {
+  padding: 15px;
+}
+
+.movie-card h5 {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.movie-card p {
+  color: #9ca3af;
+  font-size: 14px;
+}
+
+/* Details */
+.details-container {
+  background: #151a29;
+  border: 1px solid #272e40;
+  border-radius: 15px;
+  padding: 30px;
+  margin-top: 50px;
+}
+
+.details-container img {
+  max-width: 100%;
+  border-radius: 12px;
+}
+
+/* Buttons */
+.btn-purple {
+  background: #8b5cf6;
+  color: white;
+  border: none;
+}
+
+.btn-purple:hover {
+  background: #7c3aed;
+  color: white;
+}
+
+/* Responsive */
+@media(max-width: 576px) {
+  .search-box {
+    flex-direction: column;
+  }
+
+  .movie-card img {
+    height: 280px;
+  }
+
+  .details-container {
+    padding: 15px;
+  }
+}
